@@ -21,11 +21,11 @@ st.sidebar.title('Input Parameter')
 # Input dengan keterangan dan tipe numerik
 hero_names = label_encoder.classes_
 Hero_Encoded = st.sidebar.selectbox('Nama Hero', hero_names, help="Pilih hero yang ingin diprediksi")
-T_Picked = st.sidebar.number_input('Total Pick', help="Masukkan total pick untuk hero ini", format="%f")
-BS_Picked = st.sidebar.number_input('BS Pick', help="Masukkan jumlah pick di Battle State", format="%f")
-RS_Picked = st.sidebar.number_input('RS Pick', help="Masukkan jumlah pick di Ranking State", format="%f")
-T_Banned = st.sidebar.number_input('T Ban', help="Masukkan total ban untuk hero ini", format="%f")
-T_PicksBans = st.sidebar.number_input('Total Pick Ban', help="Masukkan total pick dan ban untuk hero ini", format="%f")
+T_Picked = st.sidebar.text_input('Total Pick', help="Masukkan total pick untuk hero ini")
+BS_Picked = st.sidebar.text_input('BS Pick', help="Masukkan jumlah pick di Battle State")
+RS_Picked = st.sidebar.text_input('RS Pick', help="Masukkan jumlah pick di Ranking State")
+T_Banned = st.sidebar.text_input('T Ban', help="Masukkan total ban untuk hero ini")
+T_PicksBans = st.sidebar.text_input('Total Pick Ban', help="Masukkan total pick dan ban untuk hero ini")
 
 prediksi_tim = ''
 
